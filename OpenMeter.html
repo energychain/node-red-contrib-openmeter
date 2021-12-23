@@ -1,0 +1,31 @@
+<script type="text/javascript">
+    RED.nodes.registerType('OpenMeter',{
+        category: 'OpenMeter',
+        color: 'rgb(20, 122, 80)',
+        defaults: {
+            name: {value:""},
+            meterId: {value: ""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "font-awesome/fa-dashboard",
+        label: function() {
+            return this.name||"OpenMeter";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="OpenMeter">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-meterId"><i class="fa fa-tag"></i> MeterId (<a href='https://openmeter.discovergy.com/public/v1/meters' target='_blank'>Full List (json)</a>)</label>
+        <input type="text" id="node-input-meterId" placeholder="Specify MeterId">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="OpenMeter">
+    <p>Provides last energy reading of a household particapating in the OpenMeter project.</p>
+</script>
