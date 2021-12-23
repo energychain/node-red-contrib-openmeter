@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-openmeter",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Access to Openmeter measurements (last reading) of OpenMeter Project (Germany)",
   "main": "lib.js",
   "scripts": {
@@ -13,7 +13,8 @@
   "keywords": [
     "openmeter",
     "nodered",
-    "metering"
+    "metering",
+    "node-red"
   ],
   "author": "STROMDAO GmbH <dev@stromdao.com>",
   "license": "Apache-2.0",
